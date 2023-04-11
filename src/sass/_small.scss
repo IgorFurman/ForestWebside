@@ -1,0 +1,105 @@
+@media (min-width: 578px) {
+	.nav {
+		justify-content: space-evenly;
+		height: 10%;
+		&__items {
+			display: flex;
+		}
+		&__burger-icon {
+			 display: none !important; 
+		}
+	}
+	.header {
+		height: 50vh;
+		&__company-name {
+			font-weight: normal;
+			font-size: 1.6rem;
+			text-align: left;
+		}
+		&__company-slogan {
+			font-weight: bold;
+			font-size: 4rem;
+			text-align: center;
+		}
+		&__img {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url('/projekt_koncowy_kurs/dist/img/header-img.jpg');
+		}
+		&__offer-link {
+			width: 40rem;
+			height: 10rem;
+			border: 1px solid $black;
+			box-shadow: 0px -20px 42px 20px $green;
+
+			a {
+				padding: 2rem 1.5rem;
+				font-size: 3.1rem;
+			}
+		}
+		&__offer-link:hover {
+			animation: none;
+			box-shadow: none;
+		}
+	}
+
+	.about-us {
+		&__text-content {
+			font-size: 2rem;
+		}
+		&__img img {
+			border-radius: none;
+		}
+	}
+	.banner {
+		&__background {
+			height: 25vh;
+			width: 100%;
+		}
+		&__text {
+			font-size: 2.5rem;
+			&::before {
+				width: 40rem;
+				height: 10rem;
+			}
+		}
+	}
+
+	// footer
+	.footer {
+		&__boxes {
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+
+		&__box {
+			margin: 2em;
+			width: 16%;
+			&:first-child {
+				width: 50%;
+			}
+		}
+		&__box-heading {
+			font-size: 6rem;
+			font-weight: normal;
+			text-indent: 0.3em;
+		}
+
+		&__box-title {
+			font-size: 2.2rem;
+			list-style: none;
+			text-align: left;
+		}
+
+		&__box-list-item {
+			font-size: 1.5rem;
+			margin-bottom: 1em;
+			text-align: left;
+			text-indent: -0.3em;
+		}
+		&__bottom-text {
+			text-align: center;
+			padding: 1em 0;
+		}
+	}
+}

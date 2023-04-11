@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11445c7ef4.js" crossorigin="anonymous"></script>
+    <script defer src="../dist/js/main.min.js"></script>
+    <link rel="stylesheet" href="../dist/css/main.min.css">
+
+</head>
+
+<body>
+    <!-- @import "nav.kit" -->
+
+    <div class="overflow">
+        <div class="wrapper">
+            <div class="contact-us-info">
+                <p>Skontaktuj sie z nami a odpowiemy Ci w ciągu maksymalnie 24 godzin!</p>
+            </div>
+        </div>
+
+        <form class="form" action="/send_message" method="POST">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Adres e-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Wyślij">
+        </form>
+        <div class="wrapper">
+            <div class="contact-us-details">
+                <div class="adress">
+                    <p><b>Nasz Adres: </b>
+                    </p>
+                    <p> ul. Jasnogórskiej 2
+                    </p>
+                    <p> 20-882 Kraków
+                    </p>
+                    <div class="working-hours">
+                        <p><b>Godziny otwarcia:</b> </p>
+                        <p>poniedziałek-piątek: 8:00-18:00</p>
+                        <p>sobota: 10:00-14:00</p>
+                        <p>niedziela: zamknięte</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10239.593805595492!2d19.8928489!3d50.0881881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1680962918014!5m2!1spl!2spl"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+     <!-- @import 'footer.kit' -->
+
+    </div>
+    <script src="./dist/js/main-min.js"></script>
+</body>
+
+</html>
