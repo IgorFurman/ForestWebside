@@ -1,6 +1,5 @@
 @media (min-width: 578px) {
 	.nav {
-		justify-content: space-evenly;
 		height: 10%;
 		&__items {
 			display: flex;
@@ -25,24 +24,12 @@
 			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 				url('/projekt_koncowy_kurs/dist/img/header-img.jpg');
 		}
-		&__offer-link {
-			width: 40rem;
-			height: 10rem;
-			border: 1px solid $black;
-			box-shadow: 0px -20px 42px 20px $green;
-
-			a {
-				padding: 2rem 1.5rem;
-				font-size: 3.1rem;
-			}
-		}
-		&__offer-link:hover {
-			animation: none;
-			box-shadow: none;
-		}
 	}
 
 	.about-us {
+		&__heading {
+			font-size: 3rem
+		}
 		&__text-content {
 			font-size: 2rem;
 		}
@@ -63,6 +50,7 @@
 			}
 		}
 	}
+	// cards
 
 	// footer
 	.footer {

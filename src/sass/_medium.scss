@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+	.nav {
+		justify-content: space-evenly;
+	}
 	.about-us {
 		&__content {
 			grid-template-columns: repeat(2, 1fr);
@@ -30,14 +33,22 @@
 		}
 	}
 	.cards {
-		height: 70vh;
+		height: 70%;
 		.wrapper {
 			margin: 6em 2em;
 		}
 		&__box {
 			height: 80%;
-			padding: 10rem;
-			min-width: 10em;
+			padding: 1em;
+			margin: 3.5em 0;
+			min-width: fit-content;
+			gap: 0;
+		}
+		&__title {
+			font-size: 3rem;
+		}
+		&__text {
+			font-size: 2rem;
 		}
 		button {
 			min-width: fit-content;
@@ -58,7 +69,7 @@
 		&--price {
 			margin: 1em;
 			font-weight: bolder;
-			font-size: 5rem;
+			font-size: 3rem;
 		}
 
 		// placement modifiers
@@ -81,12 +92,17 @@
 		&__offer-link {
 			grid-row: 2/3;
 			grid-column: 3/8;
+			width: 50%;
+			height: 100%;
+			margin: 1em auto;
+			padding: 0em;
 			a {
-				font-size: 2.7rem;
+				font-size: 2.3rem;
 			}
 		}
 	}
-// 
+
+	// subpage offer
 	.offers {
 		display: grid;
 		grid-template-rows: repeat(3, 1fr);
@@ -103,7 +119,7 @@
 			border: 1px solid $black;
 		}
 		img {
-			width:100%;
+			width: 100%;
 			height: 80%;
 		}
 
@@ -119,17 +135,17 @@
 			padding: 1em;
 			line-height: 1.5;
 		}
-		
+
 		button {
 			display: flex;
 			margin-top: auto;
 			margin-bottom: 3em;
+			padding: 1em 3em;
 			border: none;
 			background: none;
 			font-size: 2rem;
 			text-align: center;
 			justify-content: center;
-			padding: 1em 3em;
 			width: 50%;
 			border-radius: 10%;
 			text-transform: uppercase;

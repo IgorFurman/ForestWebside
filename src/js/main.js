@@ -67,15 +67,15 @@ const scrollToSection = (targetId) => {
 	});
 };
 
-const scrollToSectionOnLoad = () => {
-	const currentUrl = window.location.href;
-	const currentHash = currentUrl.substring(currentUrl.indexOf('#'));
-	if (currentHash !== '') {
-		scrollToSection(currentHash);
-	}
-};
+// const scrollToSectionOnLoad = () => {
+// 	const currentUrl = window.location.href;
+// 	const currentHash = currentUrl.substring(currentUrl.indexOf('#'));
+// 	if (currentHash !== '') {
+// 		scrollToSection(currentHash);
+// 	}
+// };
 
-window.addEventListener('load', scrollToSectionOnLoad);
+// window.addEventListener('load', scrollToSectionOnLoad);
 
 navDetoskopItemLinks.forEach((link) => {
 	link.addEventListener('click', (event) => {
@@ -85,34 +85,38 @@ navDetoskopItemLinks.forEach((link) => {
 	});
 });
 
-//   mobile naprawić !!!!!!!!!!!!!!!!!!!!!!!!!!!
+//   mobile 
 
 navMobileItemsLinks.forEach((link) => {
-	link.addEventListener('click', (e) => {
-		e.preventDefault();
-		const href = e.target.getAttribute('href');
-		const section = document.querySelector(href);
-		const sectionTop = section.offsetTop - navHeight;
-		window.scrollTo({ top: sectionTop, behavior: 'smooth' });
-	});
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        setTimeout(() => {
+            window.scrollTo({
+                top: targetElement.offsetTop - navHeight,
+                behavior: 'smooth',
+            });
+        }, 0);
+    });
 });
 
 // scrollspy changing nav color;
 
-const updateNavbarColor = () => {
-	sections.forEach((section) => {
-		const sectionTop = section.offsetTop;
-		const sectionHeight = section.clientHeight;
-		if (
-			window.pageYOffset >= sectionTop - navHeight &&
-			window.pageYOffset < sectionTop + sectionHeight
-		) {
-			navbar.classList.add('active');
-		} else {
-			navbar.classList.remove('active');
-		}
-	});
-};
+// const updateNavbarColor = () => {
+// 	sections.forEach((section) => {
+// 		const sectionTop = section.offsetTop;
+// 		const sectionHeight = section.clientHeight;
+// 		if (
+// 			window.pageYOffset >= sectionTop - navHeight &&
+// 			window.pageYOffset < sectionTop + sectionHeight
+// 		) {
+// 			navbar.classList.add('active');
+// 		} else {
+// 			navbar.classList.remove('active');
+// 		}
+// 	});
+// };
 
 window.addEventListener('scroll', updateNavbarColor);
 
