@@ -1,40 +1,58 @@
 @media (min-width: 578px) {
 	.nav {
-		height: 10%;
+		height: 9rem;
+		&__icon {
+			padding: 0.5em;
+			font-size: 4rem;
+			i {
+				margin-right: 0.3em;
+				font-size: 4.3rem;
+			}
+		}
+	
 		&__items {
 			display: flex;
 		}
+		&__item, &__item--out {
+			text-decoration: none;
+			text-align: center;
+			justify-content: center;
+			padding: 2em 1.5em;
+			margin: auto 0.5em;
+			height: 100%;
+		}
+		
 		&__burger-icon {
-			 display: none !important; 
+			display: none !important;
 		}
 	}
 	.header {
 		height: 50vh;
+		&__text {
+			top: 50%;
+			left: 50%;
+		}
 		&__company-name {
 			font-weight: normal;
-			font-size: 1.6rem;
+			font-size: 2rem;
 			text-align: left;
 		}
 		&__company-slogan {
-			font-weight: bold;
-			font-size: 4rem;
-			text-align: center;
-		}
-		&__img {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-				url('/projekt_koncowy_kurs/dist/img/header-img.jpg');
+			font-weight: bolder;
+			font-size: 4.5rem;
+			text-align: left;
 		}
 	}
 
 	.about-us {
 		&__heading {
-			font-size: 3rem
+			font-size: 3rem;
 		}
 		&__text-content {
 			font-size: 2rem;
 		}
 		&__img img {
-			border-radius: none;
+			border-radius: 0%;
 		}
 	}
 	.banner {
@@ -68,22 +86,23 @@
 			}
 		}
 		&__box-heading {
-			font-size: 6rem;
+			font-size: 4rem;
 			font-weight: normal;
-			text-indent: 0.3em;
+			text-indent: -0.2em;
+			text-align: left;
 		}
 
 		&__box-title {
-			font-size: 2.2rem;
+			font-size: 2rem;
 			list-style: none;
 			text-align: left;
 		}
 
 		&__box-list-item {
-			font-size: 1.5rem;
-			margin-bottom: 1em;
+			font-size: 1.7rem;
+			margin-bottom: 0.5em;
 			text-align: left;
-			text-indent: -0.3em;
+
 		}
 		&__bottom-text {
 			text-align: center;

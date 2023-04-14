@@ -1,8 +1,13 @@
+@use './colors' as *;
+
 @media (min-width: 768px) {
 	.nav {
 		justify-content: space-evenly;
 	}
 	.about-us {
+		&__heading {
+			font-size: 4rem;
+		}
 		&__content {
 			grid-template-columns: repeat(2, 1fr);
 			gap: 2rem;
@@ -33,22 +38,22 @@
 		}
 	}
 	.cards {
-		height: 70%;
-		.wrapper {
-			margin: 6em 2em;
-		}
-		&__box {
+		padding-top: 1.5em &__box {
 			height: 80%;
 			padding: 1em;
 			margin: 3.5em 0;
+			width: 100%;
 			min-width: fit-content;
 			gap: 0;
+			scale: 1.1;
 		}
 		&__title {
-			font-size: 3rem;
+			font-size: 4rem;
+			padding-top: 1.7em;
 		}
 		&__text {
 			font-size: 2rem;
+			margin-bottom: 5em;
 		}
 		button {
 			min-width: fit-content;
@@ -92,17 +97,24 @@
 		&__offer-link {
 			grid-row: 2/3;
 			grid-column: 3/8;
-			width: 50%;
-			height: 100%;
-			margin: 1em auto;
-			padding: 0em;
+			max-width: 50%;
+			max-height: 65%;
+			margin: 2em auto;
+			padding: 0;
 			a {
 				font-size: 2.3rem;
 			}
 		}
 	}
-
-	// subpage offer
+	// footer
+	.footer {
+		&__box-heading {
+			font-size: 5rem;
+			font-weight: normal;
+			text-indent: 0;
+		}
+	}
+	// offer subpage
 	.offers {
 		display: grid;
 		grid-template-rows: repeat(3, 1fr);
@@ -157,6 +169,69 @@
 			background-color: $black;
 			box-shadow: none;
 			color: $main-bg;
+		}
+	}
+	// subpage contact ========================
+	.contact {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	.contact-us-info {
+		display: block;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		input {
+			font-size: 2rem;
+		}
+		input[type='submit'] {
+			margin: 0 auto;
+		}
+		label {
+			font-size: 2rem;
+		}
+		textarea {
+			max-width: 30rem;
+			min-width: 30rem;
+			width: 100%;
+			min-height: 50rem;
+			max-height: 100rem;
+			height: 50rem;
+			font-size: 1.9rem;
+			border-radius: 2%;
+			margin-bottom: 1em;
+		}
+	}
+
+	.contact-us-details {
+		height: 100%;
+		margin: 1em;
+		padding: 0.5em;
+	}
+
+	.working-hours {
+		margin-top: 1em;
+	}
+
+	.map {
+		display: block;
+		justify-content: center;
+		text-align: center;
+		margin: 1em;
+		iframe {
+			width: 50rem;
+			height: 30rem;
 		}
 	}
 }

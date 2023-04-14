@@ -45,6 +45,10 @@ body {
 			margin-right: 0.3em;
 			font-size: 2.4rem;
 		}
+		a {
+			text-decoration: none;
+			color: $black;
+		}
 	}
 
 	&__items {
@@ -134,6 +138,10 @@ body {
 .active {
 	background-color: $second-bgc;
 }
+.hover {
+	background-color: $black;
+	color: $main-bg;
+}
 // hero img
 
 .header {
@@ -149,21 +157,21 @@ body {
 
 	&__text {
 		position: absolute;
-		top: 20%;
-		left: auto;
-		margin-left: 1.5rem;
-		padding: 1rem;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 1em;
 		color: $main-bg;
 		z-index: 10;
 	}
 	&__company-name {
 		font-weight: normal;
-		font-size: 2rem;
+		font-size: 3rem;
 		text-align: left;
 	}
 	&__company-slogan {
 		font-weight: bold;
-		font-size: 3rem;
+		font-size: 5rem;
 		text-align: left;
 	}
 }
@@ -211,7 +219,7 @@ body {
 // banner
 
 .banner {
-	margin: 2rem 0;
+	margin: 2em 0;
 
 	&__background {
 		display: flex;
@@ -221,7 +229,7 @@ body {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 23vh;
+		height: 27vh;
 		width: 100%;
 	}
 	&__text {
@@ -233,7 +241,7 @@ body {
 		text-align: center;
 		justify-content: center;
 		align-items: center;
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 		font-weight: bolder;
 		&::before {
 			content: '';
@@ -263,8 +271,8 @@ body {
 	&__text {
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		margin-top: 2em;
+		text-align: center;
+		margin: 2em 0 auto;
 		font-size: 2rem;
 	}
 	&__box {
@@ -296,9 +304,9 @@ body {
 		button {
 			border: none;
 			background: none;
-			padding: 0.5rem;
+			padding: 0.9rem;
+			margin-top: 1em;
 			width: 80%;
-			margin-top: 1rem;
 			border-radius: 10%;
 			box-shadow: 10px 1px 19px 1px rgba(40, 40, 49, 1);
 			transition: background-color 0.3s;
@@ -362,10 +370,12 @@ body {
 		background: none;
 		color: $main-bg;
 		border: 1px solid $black;
-		padding: 1rem;
+		padding: 0.6em;
 		transition-duration: 0.4s;
-		border-radius: 10%;
+		border-radius: 8%;
 		animation: wiggle 2.7s infinite;
+		overflow: hidden;
+
 		a {
 			display: flex;
 			justify-content: center;
@@ -375,18 +385,23 @@ body {
 			color: $black;
 			align-items: center;
 			justify-content: center;
+			transition: background-color 0.3s, color 0.3s;
 			cursor: pointer;
 		}
 	}
+	&__offer-link a:hover {
+		color: $main-bg;
+		background-color: $black;
+	}
 	&__offer-link:hover {
 		animation: none;
-		box-shadow: none;
 	}
 }
 
 // footer
 
 .footer {
+	margin-top: 1em;
 	height: 20%;
 	background-color: $second-bgc;
 	&__boxes {
@@ -397,14 +412,18 @@ body {
 	}
 	&__box {
 		margin: 1em;
-		&-title {
-			font-size: 2rem;
-			text-align: right;
-		}
 		&-heading {
 			font-size: 3rem;
 			margin-top: 0;
 			padding-top: 0;
+			text-align: center;
+			a {
+				font-size: 1rem;
+			}
+		}
+		&-title {
+			font-size: 2rem;
+			text-align: center;
 		}
 	}
 
@@ -412,7 +431,7 @@ body {
 		list-style-type: none;
 		text-align: center;
 		&-item {
-			padding: 1rem 0.5rem;
+			padding: 0.5em 0;
 			a {
 				position: relative;
 				text-decoration: none;
@@ -441,6 +460,26 @@ body {
 
 // subpage contact
 
+.contact {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+			url('../../dist/img/contact-bgi.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: fill;
+		z-index: -10;
+	}
+}
+
 .contact-us-info {
 	display: flex;
 	justify-content: center;
@@ -464,7 +503,7 @@ body {
 		border-radius: 5%;
 		border: 1px solid $black;
 		background-color: $main-bg;
-		color: $black;
+		color: $main-bg;
 		font-size: 1.5rem;
 		font-weight: 400;
 	}
@@ -473,6 +512,8 @@ body {
 		margin-top: 1em;
 		text-transform: uppercase;
 		padding: 1rem 2rem;
+		width: 50%;
+		color: $black;
 	}
 	label {
 		display: block;
@@ -482,7 +523,7 @@ body {
 		font-size: 1.5rem;
 		line-height: 1.5em;
 		text-transform: uppercase;
-		color: $black;
+		color: $main-bg;
 		letter-spacing: 1px;
 		text-align: center;
 	}
@@ -491,7 +532,7 @@ body {
 		max-width: 100%;
 		min-width: 100%;
 		padding: 1rem;
-		border-radius: 5%;
+		border-radius: 2%;
 		border: 1px solid $black;
 		background-color: $main-bg;
 		color: $black;
@@ -507,10 +548,12 @@ body {
 	justify-content: center;
 	margin: 1em;
 	padding: 0.5em;
+	color: $main-bg;
 }
 
 .working-hours {
 	margin-top: 1em;
+	color: $main-bg;
 }
 
 .map {
@@ -571,3 +614,4 @@ body {
 @import './animations';
 @import './small';
 @import './medium';
+@import './large';
