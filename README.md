@@ -5,14 +5,12 @@ consists of main page called Forest, offer page and contact page.
 
 Lastly, the website's CSS and JS files are minified in the dist folder for optimal load times, ensuring a fast and smooth user experience. 
 
-- **Forest**, is an interactive website designed for a fictial company that provides outdoor adventure services. The website is well-crafted and visually appealing, using a combination of captivating images and compelling content to engage visitors.
+- **Forest**, is an interactive website designed for a fictial company that provides outdoor adventure services. The website is well-crafted and visually appealing, using a combination of captivating images and compelling content to engage visitors. Those are sections of main page: 
 
-  - **Homepage** of the site starts with a captivating header showcasing the company's name and slogan
-
-  -**About us**  section that features a detailed description of the company, accompanied by a beautiful image that captures the essence of their operations. Next, there's an attractive banner with a catchy phrase promoting family adventures. This is followed by a section titled "Offers" which presents different pricing tiers for the services provided by the company. Each tier has a detailed list of what's included and what's not, enabling potential customers to make informed decisions.
-
+  - **Header**  the site starts with a captivating header showcasing the company's name and slogan.
   - **Navigation bar** makes easy for users to traverse different sections of the site. The mobile version of the navigation bar is also carefully designed for optimal user experience on smaller screens.
-
+  - **About us**  section that features a detailed description of the company, accompanied by a beautiful image that captures the essence of their operations. Next, there's an attractive banner with a catchy phrase promoting family adventures. 
+  - **Offers**  presents different pricing tiers for the services provided by the company. Each tier has a detailed list of what's included and what's not, enabling potential customers to make informed decisions.
   - **Footer** section providing more information about the company, career opportunities, and documentation. 
 
 - **Contact** page is structured with a user-friendly form to facilitate user interactions. The form fields solicit necessary information such as name, email, and the message they wish to send. Besides the form, there is also an information section detailing the physical address and operating hours of the business. In addition, an embedded Google Maps widget provides a visual cue to the location.
