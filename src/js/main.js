@@ -142,18 +142,7 @@ const changeNavbarColor = () => {
 
 changeNavbarColor();
 
-// hiding nav while scrollinh down; --- DISABLED FOR NOW
 
-// let prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   const currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.querySelector('.nav').style.top = "0";
-//   } else {
-//     document.querySelector('.nav').style.top = "-25%";
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
 
 // footer year ================================
 
