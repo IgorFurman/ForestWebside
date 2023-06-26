@@ -1,7 +1,6 @@
 # Structure
 
-Forest was my first personal project. Project language is Polish. The page 
-consists of main page called Forest, offer page and contact page. 
+Forest was my first personal project. Project language is Polish. The app offer main page, contact page and offer details page. 
 
 Lastly, the website's CSS and JS files are minified in the dist folder for optimal load times, ensuring a fast and smooth user experience. 
 
