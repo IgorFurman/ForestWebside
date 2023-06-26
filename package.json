@@ -2,8 +2,11 @@
   "name": "projekt_cz4",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://nazwa-uzytkownika.github.io/ForestWebside/",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -11,6 +14,7 @@
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
     "browser-sync": "^2.28.3",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
