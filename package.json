@@ -2,7 +2,7 @@
   "name": "projekt_cz4",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://nazwa-uzytkownika.github.io/ForestWebside/",
+  "homepage": "https://igorfurman.github.io/ForestWebside/",
 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
