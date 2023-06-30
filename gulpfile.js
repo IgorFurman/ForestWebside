@@ -52,7 +52,10 @@ function convertImages(done) {
 }
 
 function handleKits(done) {
-	src(paths.html).pipe(kit()).pipe(dest('./'));
+	src(paths.html)
+	.pipe(kit())
+	.pipe(dest('./'))
+	.pipe(dest(paths.dist));
 	done();
 }
 
