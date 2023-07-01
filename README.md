@@ -1,42 +1,60 @@
-# Structure
+# 🌳 Forest Website - Interactive and Captivating 🚀
 
-Forest was my first personal project. Project language is Polish. The app offer main page, contact page and offer details page. 
+Welcome to **Forest**, a beautifully designed interactive website for a fictional outdoor adventure services company. The project language is Polish 🇵🇱. This website is visually appealing, combining engaging images and compelling content to provide an excellent user experience.
 
-Lastly, the website's CSS and JS files are minified in the dist folder for optimal load times, ensuring a fast and smooth user experience. 
+#### 🔗 Live Application: [Forest Website](https://igorfurman.github.io/ForestWebside/)
 
-- **Forest**, is an interactive website designed for a fictial company that provides outdoor adventure services. The website is well-crafted and visually appealing, using a combination of captivating images and compelling content to engage visitors. Those are sections of main page: 
+## 📐 Structure
 
-  - **Header**  the site starts with a captivating header showcasing the company's name and slogan.
-  - **Navigation bar** makes easy for users to traverse different sections of the site. The mobile version of the navigation bar is also carefully designed for optimal user experience on smaller screens.
-  - **About us**  section that features a detailed description of the company, accompanied by a beautiful image that captures the essence of their operations. Next, there's an attractive banner with a catchy phrase promoting family adventures. 
-  - **Offers**  presents different pricing tiers for the services provided by the company. Each tier has a detailed list of what's included and what's not, enabling potential customers to make informed decisions.
-  - **Footer** section providing more information about the company, career opportunities, and documentation. 
+The application has been meticulously crafted, offering a main page, contact page, and offer details page. Let's go through each of these parts:
 
-- **Contact** page is structured with a user-friendly form to facilitate user interactions. The form fields solicit necessary information such as name, email, and the message they wish to send. Besides the form, there is also an information section detailing the physical address and operating hours of the business. In addition, an embedded Google Maps widget provides a visual cue to the location.
+### 🌳 Forest (Main Page)
 
-- **Offer** page showcases a variety of outdoor activities available for selection. These activities range from guided hiking trips and mountain biking to animal encounters and bird watching. Each activity is presented within its own container, which includes a vivid and appealing image related to the activity, a heading that concisely names the activity, a brief description likely highlighting the appeal or specific details of the activity, and a button allowing users to select or learn more about the respective offer. There are nine diverse activities in total, indicating a broad range of options for various preferences and skill levels..
+This is the home page of the website, consisting of several sections:
 
-# JavaScript 
+- **👋 Header**: The site starts with a captivating header showcasing the company's name and slogan.
+- **🌐 Navigation bar**: A user-friendly tool allowing users to traverse different sections of the site. The mobile version is also well-optimized for smaller screens.
+- **👥 About us**: This section features a detailed description of the company, a banner promoting family adventures, and a captivating image depicting their operations.
+- **🏷️ Offers**: Presents different pricing tiers for the services provided by the company, with detailed lists of what's included and what's not.
+- **🔖 Footer**: This section provides more information about the company, career opportunities, and documentation.
 
-JavaScript code implements the functionality for a responsive navigation bar and scrollspy features in a website. It also handles the dynamic display of the current year in the footer. The description of each functionality is as follows:
+### 📞 Contact Page
 
-- **Burger menu** navigation bar is set to display or hide based on the clicking of the burger icon and close button respectively. When the mobile navigation bar is displayed, scrolling of the webpage content is blocked, and when the mobile navigation bar is hidden, the scrolling is unblocked. Clicking on any item in the mobile navigation bar will hide the navigation bar and re-enable webpage scrolling.The code accounts for dynamic resizing of the navigation bar by attaching a 'resize' event listener to the window. This ensures that the offset for scrolling to different sections on the webpage is always correct, irrespective of the size of the navigation bar.
+The contact page includes a user-friendly form facilitating user interactions. The form requests necessary information like the name, email, and the intended message. Moreover, it features the company's physical address, operating hours, and a Google Maps widget indicating the location.
 
-- **Scrollspy**: When a user clicks on a navigation link, the page smoothly scrolls to the corresponding section. The color of the navigation bar and navigation link is dynamically changed based on the section of the webpage currently in the viewport. This is done using a 'scroll' event listener on the window and checking which section the current scroll position falls into.
+### 🌄 Offer Page
 
-- **Footer Year** The function gets the current year using JavaScript's Date object and then sets the text content of the .footer__year element to this year.
+This page showcases a variety of outdoor activities available for selection. Each activity is presented within its own container, making the user experience straightforward and engaging. There are nine diverse activities in total, catering to a broad range of preferences and skill levels.
 
-# Gulp & related in json file extensions.
+## 🖥️ JavaScript
 
-- **Gulp** is a task runner used in front-end development. This helps in automating tasks like Sass/SCSS compilation, auto-prefixing of CSS properties, minification of CSS and JavaScript files, running the local server, reloading the browser automatically, etc.
+The functionality of the website is powered by JavaScript, providing features like:
 
-If you want to configure gulp setting just go into gulpfile.js and configure setting as you want.
+- **🍔 Burger Menu**: A responsive navigation bar, with an easy-to-use burger menu for smaller screens.
+- **🎯 Scrollspy**: A user-friendly feature for seamless navigation around the website.
+- **📅 Footer Year**: Dynamically displays the current year in the footer.
 
-# how to run
+## 🛠️ Gulp & related extensions in json file
 
+I used **Gulp** as a task runner for automating tasks like Sass/SCSS compilation, auto-prefixing of CSS properties, minification of CSS and JavaScript files, running the local server, and auto-reloading the browser. Gulp settings can be customized as per requirements in the gulpfile.js.
+
+## 🚀 Get Started
+
+If you want to try out the project locally, follow these steps:
+
+**Clone the repository**
 ```bash
-git clone <https://github.com/IgorFurman/ForestWebside.git>
+git clone https://github.com/IgorFurman/ForestWebside.git
+```
+**Navigate to the project directory**
+```bash
 cd <project-directory>
+```
+**Install dependencies**
+```bash
 npm install
+```
+**Run the project**
+```bash
 gulp
 ```
